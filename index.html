@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>AR Trống Đồng</title>
+
   <script type="module"
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
   </script>
+
   <style>
     body {
       margin: 0;
-      background: #000;
+      background: black;
     }
     model-viewer {
       width: 100vw;
@@ -17,14 +19,17 @@
     }
   </style>
 </head>
-
 <body>
-  <model-viewer
-    src="trong_ong_ong_son__dong_son_bronze_drum-2.glb"
-    ar
-    ar-modes="scene-viewer quick-look webxr"
-    camera-controls
-    auto-rotate>
-  </model-viewer>
+
+<model-viewer
+  src="./trongdong.glb"
+  camera-controls
+  auto-rotate
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+  exposure="1"
+>
+</model-viewer>
+
 </body>
 </html>
